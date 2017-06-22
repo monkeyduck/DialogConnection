@@ -33,6 +33,9 @@
         <property name="minIdle" value="${minIdle}"></property>
         <!-- 获取连接最大等待时间 -->
         <property name="maxWait" value="${maxWait}"></property>
+        <!--避免长时间空闲关闭连接-->
+        <property name="validationQuery" value="SELECT 1"/>
+
     </bean>
 
     <!-- Session工厂 -->
